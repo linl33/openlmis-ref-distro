@@ -1,3 +1,27 @@
+# ODK Sync
+
+Create `odk.env` and fill in these,
+
+```
+DB_URL=<address of the database server> - If you are connecting to your local machine, this is your IP Address
+DB_NAME=<name of the database configured on your server>
+DB_USERNAME=<username configured to own the database>
+DB_PASSWORD=<password of database owner>
+DB_SCHEMA=<database schema name>
+LDAP_DOMAIN_L1=<First level of the LDAP domain (typically com)>
+LDAP_DOMAIN_L2=<Second level of the LDAP domanin (something like mezuricloud)>
+LDAP_USERNAME=<LDAP username>
+LDAP_PASSWORD=<LDAP password>
+REALM_STRING=<Realm string for instance>
+GROUP_PREFIX=<Prefix for ODK groups>
+CHANNEL_TYPE=<Set to secure if using SSL>
+SECURE_CHANNEL_TYPE=<Set to secure if using SSL>
+```
+
+`docker-compose up -d` to start
+
+`docker-compose down -v` to stop
+
 # OpenLMIS Reference Distribution
 Location for the OpenLMIS v3+ Reference Distribution
 

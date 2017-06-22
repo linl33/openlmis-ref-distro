@@ -20,7 +20,7 @@ services:
     volumes:
       - 'nginx-log:/var/log/nginx/log'
       - 'consul-template-log:/var/log/consul-template'
-    depends_on: [consul]
+    depends_on: [log]
 
   reference-ui:
     image: openlmis/reference-ui:5.0.2-SNAPSHOT
